@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task list</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="task-list.css">
+    <link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="main_title">Task List</h1>
+        <p>Add your task</p>
+        <input type="text" id="inputTask" placeholder="Type your task">
+        <button class="add_task" onclick="addTask()">Add Task</button>
+        <button class="clear_list" onclick="clearList()" class="list_button">All clear</button>
+        <p id="message"></p>
+        <ul id="taskList"></ul>
+    </div>
+</body>
+</html>
