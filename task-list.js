@@ -24,7 +24,7 @@ function addTasks(){
 
 function renderizarTasks() {
     const taskList = document.getElementById('taskList')
-    listaTarefas.innerHTML = ""
+    taskList.innerHTML = ""
 
     for (let i = 0; i < tasks.length; i++){
         let newTask = document.createElement('li')
