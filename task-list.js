@@ -3,6 +3,7 @@
 function addTasks(){
     const inputTask = document.getElementById('inputTask')
     let task = inputTask.value.trim()
+
     const message = document.getElementById('message')
 
     if (task == ''){
@@ -23,26 +24,27 @@ function addTasks(){
 }
 
 function renderizarTasks() {
-    const taskList = document.getElementById('taskList')
-    taskList.innerHTML = ""
+    const tasksList = document.getElementById('tasksList')
+    tasksList.innerHTML = ""
 
-    for (let i = 0; i < tasks.length; i++){
-        let newTask = document.createElement('li')
-        newTask.textContent = tasks[i]
+    let i = 0
+    for (i; i < tasks.length; i++){
+        let newTasks = document.createElement('li')
+        newTasks.textContent = tasks[i]
         
         let removeButton = document.createElement('button')
         removeButton.className = 'remove'
         removeButton.textContent = 'Remove'
-        removeButton.onclick = () => removeTask(i)
+        removeButton.onclick = () => removeTask(i)//o 'i' está no escopo global
 
         let editButton = document.createElement('button')
         editButton.className = 'edit'
         editButton.textContent = 'Edit'
         editButton.onclick = () => editTask(i)
         
-        newTask.appendChild(removeButton)
-        newTask.appendChild(editButton)
-        taskList.appendChild(newTask)
+        newTasks.appendChild(removeButton)
+        newTasks.appendChild(editButton)
+        tasksList.appendChild(newTasks)
     }
 }
 
