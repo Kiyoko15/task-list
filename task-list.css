@@ -90,7 +90,7 @@ body{
     border-color: var(--tertiary-color-dark);
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, .1);
 }
-button .remover{
+.removeButton{
     background-color: #a34743;
     color: var(--secondary-color-dark);
     padding:.312em .312em ;
@@ -101,12 +101,12 @@ button .remover{
     margin-left: .312em;
     transition: background-color .3s ease-in-out;
 }
-button .remover:hover{
+.removeButton:hover{
     background-color: var(--tertiary-color-dark);
 
 }
 
-button .editar{
+.editButton{
     background-color: var(--primary-color-dark);
     color: var(--secondary-color-dark);
     padding: .312em .312em;
@@ -118,7 +118,7 @@ button .editar{
     transition: background-color .3s ease-in-out;
 }
 
-button .editar:hover{
+.editButton:hover{
     background-color: #747d41;
 }
 .botao_lista{
